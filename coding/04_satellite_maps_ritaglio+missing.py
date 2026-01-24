@@ -7,7 +7,7 @@ from PIL import Image
 # ----------------------------
 # PARAMETRI (MODIFICA QUI)
 # ----------------------------
-INPUT_DIR  = Path(r"output_satellite_maps_500x500")     # <-- input
+INPUT_DIR  = Path(r"output_satellite_maps")     # <-- input
 OUTPUT_DIR = Path(r"output_satellite_maps_zoom")        # <-- output
 
 BORDER_CROP_PX = 350
@@ -119,4 +119,5 @@ def process_folder(input_dir: Path, output_dir: Path, border_px: int) -> None:
 
 if __name__ == "__main__":
     process_folder(INPUT_DIR, OUTPUT_DIR, BORDER_CROP_PX)
+
 
