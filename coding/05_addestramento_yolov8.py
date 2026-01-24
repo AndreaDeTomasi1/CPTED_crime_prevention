@@ -1,26 +1,24 @@
 import zipfile
 from pathlib import Path
+import cv2
+import numpy as np
+import pandas as pd
+import yaml
+from ultralytics import YOLO
+import shutil
+import os
 
-ZIP_PATH = r"dataset/cpted.v1.yolov8.zip"
-DATASET_PATH = Path("/dataset/yolov8_dataset")
+
+ZIP_PATH = r"dataset\cpted.v1.yolov8.zip"
+DATASET_PATH = Path(r"dataset\yolov8_dataset")
 
 with zipfile.ZipFile(ZIP_PATH, 'r') as zip_ref:
     zip_ref.extractall(DATASET_PATH)
 
 print("Dataset estratto in:", DATASET_PATH)
 
-import cv2
-import numpy as np
-import pandas as pd
-import yaml
-from pathlib import Path
-from ultralytics import YOLO
-import shutil
-import os
-
-DATASET_PATH = Path("/dataset/yolov8_dataset")
 SPLITS = ["train", "valid"]
-OUTPUT_CSV = r"output/dataset_summary.csv"
+OUTPUT_CSV = r"output\dataset_summary.csv"
 
 # Legge data.yaml
 with open(DATASET_PATH / "data.yaml", "r") as f:
