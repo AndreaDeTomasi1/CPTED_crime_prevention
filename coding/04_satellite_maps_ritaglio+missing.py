@@ -1,4 +1,3 @@
-# crop_zoom_center.py
 # Input:  cartella con immagini satellitari
 # Output: cartella con immagini "zoomate" (crop centrale + resize a dimensioni originali)
 
@@ -120,3 +119,4 @@ def process_folder(input_dir: Path, output_dir: Path, border_px: int) -> None:
 
 if __name__ == "__main__":
     process_folder(INPUT_DIR, OUTPUT_DIR, BORDER_CROP_PX)
+
