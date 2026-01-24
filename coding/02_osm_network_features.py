@@ -1,4 +1,3 @@
-# cpted_osm_master_features_poi_flags.py
 # Unico codice: rete stradale (drive) multi-raggio + gerarchia strade + LANDUSE + POI FLAG (0/1)
 # Output: output/cpted_osm_master_features.csv
 
@@ -457,3 +456,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
