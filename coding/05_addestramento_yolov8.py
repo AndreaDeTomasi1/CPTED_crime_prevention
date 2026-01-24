@@ -1,8 +1,8 @@
 import zipfile
 from pathlib import Path
 
-ZIP_PATH = "/content/drive/MyDrive/datasets/cpted_master 2.v1i.yolov8.zip"
-DATASET_PATH = Path("/content/tila_dataset")
+ZIP_PATH = r"dataset/cpted.v1.yolov8.zip"
+DATASET_PATH = Path("/dataset/yolov8_dataset")
 
 with zipfile.ZipFile(ZIP_PATH, 'r') as zip_ref:
     zip_ref.extractall(DATASET_PATH)
@@ -18,9 +18,9 @@ from ultralytics import YOLO
 import shutil
 import os
 
-DATASET_PATH = Path("/content/tila_dataset")
+DATASET_PATH = Path("/dataset/yolov8_dataset")
 SPLITS = ["train", "valid"]
-OUTPUT_CSV = DATASET_PATH / "dataset_summary.csv"
+OUTPUT_CSV = r"output/dataset_summary.csv"
 
 # Legge data.yaml
 with open(DATASET_PATH / "data.yaml", "r") as f:
