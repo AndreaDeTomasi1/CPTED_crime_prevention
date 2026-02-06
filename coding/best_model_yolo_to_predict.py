@@ -7,9 +7,9 @@ import os
 import yaml
 
 
-DATASET_PATH = Path(r"C:\Users\nertila.hoxha\Downloads\tila_challenge 2.v1-test.yolov8")
-NEW_IMAGES_DIR = Path(r"C:\Users\nertila.hoxha\Downloads\new_images")  # immagini da predire
-MODEL_PATH = Path(r"runs/train/weights/best.pt")  # modello addestrato precedentemente
+DATASET_PATH = Path(r"*********\2.v1-test.yolov8")
+NEW_IMAGES_DIR = Path(r"*********\new_images")  # immagini da predire
+MODEL_PATH = Path(r"*********\best.pt")  # modello addestrato precedentemente
 OUTPUT_CSV = NEW_IMAGES_DIR / "new_images_summary.csv"
 
 
@@ -68,3 +68,4 @@ for img_path in NEW_IMAGES_DIR.glob("*"):
 df = pd.DataFrame(rows)
 df.to_csv(OUTPUT_CSV, index=False)
 print(f"CSV creato: {OUTPUT_CSV}")
+
