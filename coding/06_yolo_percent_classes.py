@@ -7,7 +7,7 @@ from ultralytics import YOLO
 import os
 import shutil
 
-DATASET_PATH = Path(r"output\cpted_master.v1i.yolov8")
+DATASET_PATH = Path(r"dataset\yolov8_dataset")
 SPLITS = ["train", "valid"]
 OUTPUT_CSV = DATASET_PATH / "dataset_summary.csv"
 
@@ -112,3 +112,4 @@ for split in SPLITS:
 df = pd.DataFrame(rows)
 df.to_csv(OUTPUT_CSV, index=False)
 print(f"CSV creato: {OUTPUT_CSV}")
+
