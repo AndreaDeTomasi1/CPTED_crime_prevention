@@ -41,7 +41,7 @@ df_sinistri_unique['Sinistro'] = df_sinistri_unique['Sinistro'].apply(
     lambda x: 'Furto' if str(x).strip().lower() == 'furto' else 'Non Furto'
 )
 
-df_mappe_satellitari = pd.read_csv(r'output\cpted_master.v1i.yolov8\dataset_summary.csv')
+df_mappe_satellitari = pd.read_csv(r'dataset\yolov8_dataset\dataset_summary.csv')
 cols_to_drop = ['split']
 df_mappe_satellitari = df_mappe_satellitari.drop(columns=cols_to_drop).rename(columns={'image': 'codice_cliente'})
 
@@ -173,3 +173,4 @@ print(f"Recall (Sensibilità dei Furti): {recall:.3f}")
 
 joblib.dump(ada, r'output\adaboost_furti_model.pkl')
 print("Modello AdaBoost salvato correttamente")
+
