@@ -92,3 +92,9 @@ Tutte le feature vengono aggregate in un modello **AdaBoost**, che produce uno *
 - **CPTED – Crime Prevention Through Environmental Design** → vedi `Paper_CPTED.pdf`
 
 - Presentazione completa del progetto → `Presentazione.pdf`
+
+## ⚠️ Note sul Repository
+
+Per via dei limiti di dimensione imposti da GitHub, non è stato possibile caricare l’intero set di dati utilizzato durante lo sviluppo del progetto. Alcuni file, in particolare quelli relativi alle immagini satellitari e ai dataset completi, sono stati quindi esclusi dal repository.
+
+Questo progetto ha principalmente **finalità dimostrative e accademiche**. Di conseguenza, i codici presenti potrebbero non essere completamente integrati tra loro o pronti per un utilizzo in produzione. L’obiettivo è mostrare l’approccio metodologico, le tecniche impiegate e il funzionamento generale della pipeline.
