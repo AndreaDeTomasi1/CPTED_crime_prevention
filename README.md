@@ -40,6 +40,8 @@ Tutte le feature vengono aggregate in un modello **AdaBoost**, che produce uno *
 
 .
 ├── coding/
+|   ├──APP/
+|   |  └── Codice per applicazione Streamlit
 │   ├── Codici utilizzati per preprocessing, feature extraction e training
 │   └── Modello YOLOv8
 │
